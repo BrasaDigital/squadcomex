@@ -1,0 +1,31 @@
+squad:
+  code: "inside-sales"
+  name: "Inside Sales Comex"
+  description: "Transforma um pedido de cotação de cliente em proposta aprovada e acompanha a decisão, gerando um dossiê padronizado por processo para a Atlas Log."
+  icon: "📦"
+
+company: "Atlas Log"
+
+party: squad-party.csv
+
+pipeline: pipeline/pipeline.yaml
+
+skills:
+  - web_search
+  - web_fetch
+  # Nota: Caio Cotação usa o conector de e-mail nativo da sessão (Gmail/Microsoft 365 MCP)
+  # para criar rascunhos de RFQ. Não é uma skill do catálogo Opensquad — não precisa
+  # ser "instalado"; é detectado em tempo de execução (ver agents/caio-cotacao.agent.md).
+
+data:
+  - pipeline/data/research-brief.md
+  - pipeline/data/domain-framework.md
+  - pipeline/data/quality-criteria.md
+  - pipeline/data/output-examples.md
+  - pipeline/data/anti-patterns.md
+
+memory:
+  memories: _memory/memories.md
+  runs: _memory/runs.md
+
+output_dir: output

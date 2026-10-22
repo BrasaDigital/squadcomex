@@ -1,0 +1,70 @@
+pipeline:
+  code: "inside-sales"
+  name: "Inside Sales Comex"
+
+steps:
+  - step: 1
+    name: "extrair-pedido"
+    file: "steps/step-01-extrair-pedido.md"
+    type: "agent"
+    agent: "pedro-pedido"
+
+  - step: 2
+    name: "redigir-rfq"
+    file: "steps/step-02-redigir-rfq.md"
+    type: "agent"
+    agent: "caio-cotacao"
+
+  - step: 3
+    name: "checkpoint-aprovar-envio-cotacao"
+    file: "steps/step-03-checkpoint-aprovar-envio-cotacao.md"
+    type: "checkpoint"
+
+  - step: 4
+    name: "comparar-ofertas"
+    file: "steps/step-04-comparar-ofertas.md"
+    type: "agent"
+    agent: "caio-cotacao"
+
+  - step: 5
+    name: "montar-estimativa"
+    file: "steps/step-05-montar-estimativa.md"
+    type: "agent"
+    agent: "estela-estimativa"
+
+  - step: 6
+    name: "checkpoint-aprovar-estimativa"
+    file: "steps/step-06-checkpoint-aprovar-estimativa.md"
+    type: "checkpoint"
+
+  - step: 7
+    name: "redigir-proposta"
+    file: "steps/step-07-redigir-proposta.md"
+    type: "agent"
+    agent: "rafael-redacao"
+
+  - step: 8
+    name: "revisar-dossie"
+    file: "steps/step-08-revisar-dossie.md"
+    type: "agent"
+    agent: "vitor-veredito"
+    on_reject: 7
+
+  - step: 9
+    name: "checkpoint-aprovar-envio-proposta"
+    file: "steps/step-09-checkpoint-aprovar-envio-proposta.md"
+    type: "checkpoint"
+
+  - step: 10
+    name: "followup-status-decisao"
+    file: "steps/step-10-followup-status-decisao.md"
+    type: "agent"
+    agent: "rafael-redacao"
+
+checkpoints:
+  - step: 3
+    label: "Aprovar envio de cotação a fornecedores"
+  - step: 6
+    label: "Aprovar estimativa de custos"
+  - step: 9
+    label: "Aprovar envio da proposta ao cliente"

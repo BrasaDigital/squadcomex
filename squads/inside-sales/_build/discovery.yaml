@@ -1,0 +1,54 @@
+squad_code: "inside-sales"
+purpose: "Transformar um pedido de cotação de cliente em proposta aprovada e acompanhar a decisão do cliente, para a Atlas Log (agenciamento de carga e despacho aduaneiro — marítimo, aéreo e rodoviário)."
+domain: "automation"
+
+company:
+  name: "Atlas Log"
+  tone: "Profissional, consultivo e acessível; parceira estratégica; valores: transparência, agilidade, parceria, inovação, compromisso"
+  products: "Consultoria em comércio exterior, agenciamento de carga internacional (marítimo, aéreo, multimodal), desembaraço aduaneiro"
+
+language: "Português (Brasil)"
+
+context:
+  trigger: "Pedido do cliente (texto, e-mail, mensagem ou arquivo); usuário informa a pasta do processo"
+  systems: "Dossiê por processo em pasta própria (cliente + referência do processo), com arquivos padronizados que outros squads (Pré-Embarque, Pós-Embarque, Desembaraço, Financeiro) também lêem"
+  frequency: "Sob demanda (por processo/pedido)"
+
+agents_requested:
+  - name: "Analista de Pedido"
+    responsibility: "Extrai e organiza os dados do pedido, identifica o que falta (NCM provável, incoterm, dimensões, tipo de carga, anuências ANVISA/MAPA/IBAMA) e lista perguntas para o cliente"
+  - name: "Cotador"
+    responsibility: "Redige solicitações de cotação para fornecedores/agentes/armadores, compara ofertas recebidas (frete, prazo, validade, condições) e recomenda a melhor com justificativa"
+  - name: "Estimador de Custos"
+    responsibility: "Monta estimativa de custo total (frete, seguro, impostos, despesas origem/destino, despachante, armazenagem). Nunca inventa alíquotas: calcula só com dados informados ou aponta fonte oficial e marca pendência"
+  - name: "Redator da Proposta e Follow-up"
+    responsibility: "Escreve a proposta consultiva ao cliente e mensagens de acompanhamento da decisão, com prazos de retorno"
+
+checkpoints_requested:
+  - "Antes de enviar qualquer cotação a fornecedor"
+  - "Após a estimativa de custo"
+  - "Antes de enviar a proposta ao cliente"
+
+pendencies_rule: "Se faltar qualquer informação, o agente nunca assume nem inventa. Registra em pendencias.md (o que falta, quem pode responder, para qual área) e para."
+
+output_spec:
+  structure: "Um dossiê por processo, em pasta própria (cliente + referência do processo)"
+  files:
+    - "pedido.md"
+    - "cotacoes.md"
+    - "estimativa-custos.md"
+    - "proposta.md"
+    - "status-decisao.md"
+    - "pendencias.md"
+  note: "Formato fixo — outros squads (Pré-Embarque, Pós-Embarque, Desembaraço, Financeiro) vão ler o mesmo dossiê"
+
+memory_rule: "Sempre que o usuário corrigir algo em um checkpoint, registrar a regra em _memory/memories.md do squad e aplicar nas próximas execuções"
+
+tools_needed:
+  - "file read/write (dossiê)"
+
+investigation:
+  enabled: false
+  profiles: []
+
+target_formats: []

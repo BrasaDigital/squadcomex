@@ -1,0 +1,9 @@
+node_modules/
+_opensquad/_browser_profile/
+_opensquad/logs/
+*.log
+.DS_Store
+Thumbs.db
+output/*/
+
+# Processo dossies (dados reais de clientes) ficam de fora do repositorio por padrao

@@ -1,0 +1,6 @@
+id,displayName,title,icon,path
+pedro-pedido,Pedro Pedido,Analista de Pedido,📋,./agents/pedro-pedido.agent.md
+caio-cotacao,Caio Cotação,Cotador,📨,./agents/caio-cotacao.agent.md
+estela-estimativa,Estela Estimativa,Estimadora de Custos,💰,./agents/estela-estimativa.agent.md
+rafael-redacao,Rafael Redação,Redator da Proposta e Follow-up,✍️,./agents/rafael-redacao.agent.md
+vitor-veredito,Vitor Veredito,Revisor do Dossiê,✅,./agents/vitor-veredito.agent.md
