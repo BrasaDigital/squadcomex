@@ -13,6 +13,7 @@ pipeline: pipeline/pipeline.yaml
 skills:
   - web_search
   - web_fetch
+  # Nota: Aurélio Aura usa o conector AuraComex da sessão (processo, carga, taxas e estimativa).
   # Nota: Caio Cotação usa o conector de e-mail nativo da sessão (Gmail/Microsoft 365 MCP)
   # para criar rascunhos de RFQ. Não é uma skill do catálogo Opensquad — não precisa
   # ser "instalado"; é detectado em tempo de execução (ver agents/caio-cotacao.agent.md).

@@ -4,7 +4,7 @@ type: checkpoint
 
 # Checkpoint: Aprovar Envio da Proposta ao Cliente
 
-Apresente `proposta.md` e o veredito do Revisor (Vitor Veredito) ao usuário. Só chegue a este checkpoint se o veredito for APROVADO.
+Apresente o documento de proposta do Aura, `proposta.md` (mensagem de envio) e o veredito do Revisor (Vitor Veredito) ao usuário. Só chegue a este checkpoint se o veredito for APROVADO.
 
 Pergunte: "A proposta acima está aprovada para envio ao cliente? Você pode aprovar, pedir um ajuste de texto, ou cancelar o envio."
 

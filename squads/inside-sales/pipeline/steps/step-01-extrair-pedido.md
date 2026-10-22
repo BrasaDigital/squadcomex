@@ -19,7 +19,8 @@ Load these files before executing:
 
 1. Ler o pedido do cliente e confirmar/criar a pasta do dossiê (cliente + referência do processo).
 2. Extrair todos os campos obrigatórios (produto, origem, destino, quantidade/peso/volume, incoterm, modal, tipo de carga), sugerir NCM provável e avaliar exigência de anuências, seguindo exatamente o processo da task `extrair-pedido.md` do agente Pedro Pedido.
-3. Para cada lacuna encontrada, redigir uma pergunta objetiva ao cliente e registrar em pendencias.md com responsável e área.
+3. Identificar o escopo: **cotação simples** (só frete/taxas) ou **com desembaraço** (Atlas cuida do desembaraço, o que habilita a estimativa). Se o cliente não informou, perguntar e registrar como pendência.
+4. Para cada lacuna encontrada, redigir uma pergunta objetiva ao cliente e registrar em pendencias.md com responsável e área.
 
 ## Output Format
 
@@ -28,6 +29,7 @@ Load these files before executing:
 
 **Cliente:** ...
 **Referência do processo:** ...
+**Escopo:** cotação simples | com desembaraço
 **Data de recebimento:** ...
 
 ## Dados do pedido

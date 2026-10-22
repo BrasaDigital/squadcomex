@@ -7,6 +7,9 @@ outputFile: squads/inside-sales/output/{processo}/estimativa-custos.md
 
 # Step 05: Montar Estimativa de Custos
 
+> **Condicional ao escopo.** Só executar se `pedido.md` indicar **Escopo: com desembaraço** (a estimativa só existe quando a Atlas cuidará do desembaraço). Se o escopo for **cotação simples**, registrar "não aplicável — cotação simples" e seguir para o próximo passo sem gerar arquivo.
+
+
 ## Context Loading
 
 Load these files before executing:

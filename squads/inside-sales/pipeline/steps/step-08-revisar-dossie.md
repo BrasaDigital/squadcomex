@@ -11,8 +11,9 @@ inputFile: squads/inside-sales/output/{processo}/proposta.md
 Load these files before executing:
 - `squads/inside-sales/output/{processo}/pedido.md`
 - `squads/inside-sales/output/{processo}/cotacoes.md`
-- `squads/inside-sales/output/{processo}/estimativa-custos.md`
+- `squads/inside-sales/output/{processo}/estimativa-custos.md`  (somente se escopo com desembaraço)
 - `squads/inside-sales/output/{processo}/proposta.md`
+- Documento de proposta gerado no Aura (`listar_documentos` / `ler_documento`) — conferir os valores contra ele, não só contra proposta.md.
 - `squads/inside-sales/output/{processo}/pendencias.md`
 - `pipeline/data/quality-criteria.md` — critérios de aprovação/reprovação
 
