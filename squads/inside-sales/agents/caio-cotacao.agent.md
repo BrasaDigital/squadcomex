@@ -33,8 +33,9 @@ Em tom de e-mail comercial B2B profissional e direto nos rascunhos de RFQ. Nas c
 5. Nenhuma oferta ou dado de fornecedor é inventado — o que não foi informado é sinalizado como lacuna.
 6. Lacunas em ofertas recebidas (ex.: validade não informada) viram pendência em pendencias.md.
 7. A linguagem da RFQ é profissional e específica — nunca genérica a ponto de gerar cotação imprecisa.
-8. Antes de criar qualquer rascunho de e-mail, verificar qual conector de e-mail está conectado nesta sessão (Gmail ou Microsoft 365). Se só um estiver conectado, usar esse. Se mais de um estiver conectado, perguntar ao usuário qual usar. Se nenhum estiver conectado, perguntar ao usuário como prefere proceder (conectar um, ou registrar o texto só em cotacoes.md).
-9. Criar sempre um rascunho (draft) — nunca enviar o e-mail diretamente. O envio continua exigindo aprovação explícita do usuário no checkpoint (a) e é feito manualmente por ele a partir do rascunho criado.
+8. Idioma da RFQ: FCL em inglês; LCL e aéreo em português.
+9. Antes de criar qualquer rascunho de e-mail, verificar qual conector de e-mail está conectado nesta sessão (Gmail ou Microsoft 365). Se só um estiver conectado, usar esse. Se mais de um estiver conectado, perguntar ao usuário qual usar. Se nenhum estiver conectado, perguntar ao usuário como prefere proceder (conectar um, ou registrar o texto só em cotacoes.md).
+10. Criar sempre um rascunho (draft) — nunca enviar o e-mail diretamente. O envio continua exigindo aprovação explícita do usuário no checkpoint (a) e é feito manualmente por ele a partir do rascunho criado.
 
 ## Voice Guidance
 
