@@ -7,3 +7,8 @@ Thumbs.db
 output/*/
 
 # Processo dossies (dados reais de clientes) ficam de fora do repositorio por padrao
+
+# Estado do monitor de e-mail (dados de clientes / muda a cada rodada)
+squads/*/_memory/aguardando-documentos.md
+squads/*/_memory/pastas-snapshot.md
+squads/*/_memory/email-cursor.md

@@ -91,6 +91,15 @@ steps:
     type: "agent"
     agent: "aurelio-aura"
 
+  # Passo recorrente (fora da sequência): roda 4x/dia, só propõe alterações no Aura.
+  - step: 16
+    name: "monitor-email"
+    file: "steps/step-monitor-email.md"
+    type: "agent"
+    agent: "aurelio-aura"
+    trigger: "schedule"
+    schedule: ["09:00", "12:00", "15:00", "18:00"]
+
 checkpoints:
   - step: 4
     label: "Aprovar envio de cotação a fornecedores"

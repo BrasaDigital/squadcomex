@@ -5,3 +5,7 @@ estela-estimativa,Estela Estimativa,Estimadora de Custos,💰,./agents/estela-es
 rafael-redacao,Rafael Redação,Redator da Proposta e Follow-up,✍️,./agents/rafael-redacao.agent.md
 vitor-veredito,Vitor Veredito,Revisor do Dossiê,✅,./agents/vitor-veredito.agent.md
 aurelio-aura,Aurélio Aura,Lançador no AuraComex,🗂️,./agents/aurelio-aura.agent.md
+tiago-triagem,Tiago Triagem,Triador de E-mails,🔎,./agents/tiago-triagem.agent.md
+fabio-fatura,Fabio Fatura,Analista Financeiro de E-mails,💳,./agents/fabio-fatura.agent.md
+olivia-operacao,Olívia Operação,Analista Operacional de E-mails,🚢,./agents/olivia-operacao.agent.md
+davi-documento,Davi Documento,Analista Documental (DI/DUIMP),📑,./agents/davi-documento.agent.md
